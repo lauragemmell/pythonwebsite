@@ -6,15 +6,19 @@ import mandrill
 app = Flask(__name__)
 
 @app.route("/home")
-def hello():
+def home():
 	return render_template('index.html')
 
 @app.route("/companies/signup")
-def hello1():
+def company_sign_up_page():
 	return render_template('companysignup.html')
 
+@app.route("/about")
+def about():
+	return render_template('about.html')
+
 @app.route("/complete",methods=['POST'])
-def sign_up():
+def company_sign_up():
 	form_data = request.form
 	mandrill_client = mandrill.Mandrill('9FdJjzfupPJojkDcNiv4jA')
  	mandrill_client.messages.send(
