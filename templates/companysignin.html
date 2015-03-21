@@ -1,0 +1,44 @@
+<! DOCTYPE html>
+<head>
+	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
+	
+</head>
+<body>
+	<div id="nav" class='row'>
+		<div class='col-sm-4'>
+			<nav>
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="Blog.html">Blog </a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</nav>
+			</ul>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-sm-4'>
+		</div>
+		<div class='col-sm-4'>
+		<div id="sign-in">
+			<h3>Company Sign In</h3>
+			<form method="get" action="/companies/signin/successful">
+		        <p><label for="username">Company Username: </label>
+		        	<input type="email" name="login" value="" placeholder="Email" required=""></p>
+		        <p><label for="password">Password: </label>
+		        	<input type="password" name="password" value="" placeholder="Password" required=""></p>
+		        <p class="remember_me">
+		          <label>
+		            <input type="checkbox" name="remember_me" id="remember_me">
+		            Remember me on this computer
+		          </label>
+		        </p>
+		        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+		      </form>
+		</div>
+		</div>
+		<div class='col-sm-4'>
+		</div>
+	</div>
+</body>
+</html>

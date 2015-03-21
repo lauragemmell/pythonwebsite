@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--email, address, social media buttons-->
+<html>
+<head>
+	<title>Contact></title>
+	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
+	<link href="{{ url_for('static', filename='font-awesome-4.3.0/css/font-awesome.min.css') }}" rel='stylesheet'>
+	<style>
+		#map-canvas{
+	
+			width: 400px;
+			height: 300px;
+
+		}
+	</style>	
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(51.505151, -0.019459),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head> 
+
+<body>
+	<div id="nav" class='row'>
+		<div class='col-sm-4'>
+			<nav>
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/blog">Blog </a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</nav>
+			</ul>
+		</div>
+	</div>
+	<div id="contact">
+		<div>
+			<h1>Contact:</h1>	
+		</div>
+		<div>
+			<h3>Email:</h3>
+			<p>contact@startupsearch.co.uk</p>
+		</div>
+		<div>
+			<h3>Address:</h3>
+			<p>One Canada Square<br>Canary Wharf<br>London<br>United Kingdom<br>E14 5AB</p>	
+			<div id="map-canvas"></div>
+		</div>
+		<div id"icons"><!--social media buttons-->
+			<i class="fa fa-facebook-square fa-2x"></i>   
+			<i class="fa fa-twitter-square fa-2x"></i>
+			<i class="fa fa-linkedin-square fa-2x"></i>
+		</div>
+	 </div>
+</body>
+</html>
