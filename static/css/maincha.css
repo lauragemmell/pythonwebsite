@@ -1,0 +1,93 @@
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=73c051koWPUt-+4szPvxLP8JQNAk8yZ200++42+MblUrc9L9k8iuQ7KKq6XEc9nr9a1nZku4v4i9KpnE-AuYmBByeo */
+
+/* Feel free to copy&paste color codes to your application */
+/* As hex codes */
+
+/*.color-primary-0 { color: #31DFBD }	/* Main Primary color */
+/*..color-primary-1 { color: #13FCCF }
+.color-primary-2 { color: #18DEB7 }
+.color-primary-3 { color: #00DDB2 }
+.color-primary-4 { color: #00D8AE }
+
+.color-secondary-1-0 { color: #6F9594 }	/* Main Secondary color (1) */
+/*..color-secondary-1-1 { color: #9ACBC9 }
+.color-secondary-1-2 { color: #90B8B6 }
+.color-secondary-1-3 { color: #5D8382 }
+.color-secondary-1-4 { color: #507473 }
+
+.color-secondary-2-0 { color: #F8760F }	/* Main Secondary color (2) */
+/*..color-secondary-2-1 { color: #FFAF6E }
+.color-secondary-2-2 { color: #FF9643 }
+.color-secondary-2-3 { color: #B45306 }
+.color-secondary-2-4 { color: #733300 }
+
+.color-complement-0 { color: #FFD6BB }	/* Main Complement color */
+/*..color-complement-1 { color: #FFFFFF }
+.color-complement-2 { color: #FFECDF }
+.color-complement-3 { color: #FFC8A5 }
+.color-complement-4 { color: #FFC49E }
+
+/* As RGBa codes */
+
+/*..rgba-primary-0 { color: rgba( 49,223,189,1) }	/* Main Primary color */
+/*..rgba-primary-1 { color: rgba( 19,252,207,1) }
+.rgba-primary-2 { color: rgba( 24,222,183,1) }
+.rgba-primary-3 { color: rgba(  0,221,178,1) }
+.rgba-primary-4 { color: rgba(  0,216,174,1) }
+
+.rgba-secondary-1-0 { color: rgba(111,149,148,1) }	/* Main Secondary color (1) */
+/*..rgba-secondary-1-1 { color: rgba(154,203,201,1) }
+.rgba-secondary-1-2 { color: rgba(144,184,182,1) }
+.rgba-secondary-1-3 { color: rgba( 93,131,130,1) }
+.rgba-secondary-1-4 { color: rgba( 80,116,115,1) }
+
+.rgba-secondary-2-0 { color: rgba(248,118, 15,1) }	/* Main Secondary color (2) */
+/*..rgba-secondary-2-1 { color: rgba(255,175,110,1) }
+.rgba-secondary-2-2 { color: rgba(255,150, 67,1) }
+.rgba-secondary-2-3 { color: rgba(180, 83,  6,1) }
+.rgba-secondary-2-4 { color: rgba(115, 51,  0,1) }
+
+.rgba-complement-0 { color: rgba(255,214,187,1) }	/* Main Complement color */
+/*..rgba-complement-1 { color: rgba(255,255,255,1) }
+.rgba-complement-2 { color: rgba(255,236,223,1) }
+.rgba-complement-3 { color: rgba(255,200,165,1) }
+.rgba-complement-4 { color: rgba(255,196,158,1) }*/
+
+.jumbotron {
+	padding-top: 90px;
+	min-height: 600px;
+	margin-bottom: 0;
+	background-color: #31DFBD;
+}
+
+.jumbotron h1 {
+	color: white;
+}
+
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+
+div {
+	display: block;
+}
+#social-buttons button {
+	color: white;
+}
+.btn-twitter {
+	background-color: #00acee;
+	border-color: #009ad5
+}
+.btn-facebook {
+	background-color: #4868ac;
+	border-color:#314776;
+}
+.btn-pinterest {
+	background-color: #b62f26;
+	border-color:#b62f26;
+}

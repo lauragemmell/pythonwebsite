@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>Join</title>
+	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
+	
+</head>
+
+<body>
+<div id="nav" class='row'>
+	<div class='col-sm-4'>
+	</div>
+	<div class='col-sm-4'>
+	<div id="contact-form">
+
+		<h1><span>Sign up for JobSwipe and take the next step to finding your perfect job</span></h1>
+		<form method="post" action="/signup">
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus" />
+			<br>
+			<br>
+			<label for="email">Email Address: </label>
+			<input type="email" id="email" name="email" value="" placeholder="email" required="required" />
+			<br>
+			<br>
+			<label for="skill">What are your key skills? </label> 
+			<input type="text" id="skill" name="skill" placeholder="e.g. Coding" required="required">
+			<br>
+			<br>
+			<label for="qualification">Qualification: </label> 
+			<input type="text" id="qualification" name="qualification" placeholder="" required="required">
+			<br>
+			<br>
+			<label for="experience_level">Experience level: </label> 
+			<input type="text" id="experience_level" name="experience_level" placeholder="Number of years experience" required="required">
+			<br>
+			<br>
+			<label for="job_area">Area of experience: </label> 
+			<input type="text" id="job_area" name="job_area" placeholder="Industries you have worked in" required="required">
+			<br>
+			<br>
+			<label for="job_seniority">What was your most recent job title? </label> 
+			<input type="text" id="job_seniority" name="job_seniority" placeholder="Job Title" required="">
+			<br>
+			<br>
+			<label for="job_tenure">How long were you there? </label> 
+			<input type="text" id="job_tenure" name="job_tenure" placeholder="6 months" required="required">
+			<br>
+			<br>
+			<label for="buzzwords">What kind of things would you like to do in your job? </label> <br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Data_analysis">Data Analysis <br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Presenting">Presenting<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Negotiation">Negotiation<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Design">Designing things<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Research">Research<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Strategy">Looking at information to draw conclusions on a course of action<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Coding">Writing code<br>
+			<input type="checkbox" id="buzzwords" name="buzzwords" value="Making">Working on something with a tangible output<br>
+			<br>
+			<br>
+			<input type="submit" value="Submit" id="submit-button" />
+		</form>
+	</div>
+	</div>
+	<div class='col-sm-4'>
+	</div>
+</div>
+</body>
+</html>
