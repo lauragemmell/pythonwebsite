@@ -6,15 +6,23 @@ body{
 	font-size: 15px;
 
 }
+.banner-words{
+	color: rgb(51,153,255);
+	font-weight: 300;
+	font-size: 50px;
+	padding: 5px;
+}
+.p1{
+	color: rgb(255,255,255);
+	background-color: rgb(51,153,255);
+}
 #homepage{
 	margin-left: auto;
     margin-right: auto;
     width: 95%;
 	text-align: center;
 	position:absolute;
-	top:40%;
 }
-
 #nav {
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0);
 	display: block;
@@ -111,11 +119,9 @@ nav > ul > li:hover > div {
 	visibility: visible;
 }
 #contact-form{
-	margin-left: 37%;
     margin-right: auto;
 	text-align: center;
 	position:absolute;
-	top:10%;
 	background-color: rgb(250,250,250);
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
@@ -123,11 +129,9 @@ nav > ul > li:hover > div {
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 }
 #contact-form-app{
-	margin-left: 15%;
     margin-right: auto;
 	text-align: center;
 	position:absolute;
-	top:10%;
 	background-color: rgb(250,250,250);
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
@@ -215,4 +219,14 @@ i {
 }
 #text{
 	margin: 0px 0px 0px 22px;
+}
+#about{
+    margin-right: auto;
+	text-align: center;
+	position:absolute;
+	background-color: rgb(250,250,250);
+	border: 1px solid rgb(160,160,160);
+	border-radius: 10px;
+	padding-right: 5px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 }

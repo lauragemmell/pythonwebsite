@@ -70,5 +70,11 @@ def sign_up():
 	)
 
 	return "Thanks for signing up. Please check your inbox for your confirmation email"
+
+
+@app.route("/applicant/interface")
+def applicant_interface():
+	return render_template('applicant_interface.html')
+		
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", port=5000,debug=True)

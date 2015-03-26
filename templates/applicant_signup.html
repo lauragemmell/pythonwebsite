@@ -2,30 +2,19 @@
 <html>
 <head>
   <title>Join</title>
-	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
+	{% include 'style.html' %}
 	
 </head>
 
 <body>
-	<div id="nav" class='row'>
-		<div class='col-sm-4'>
-			<nav>
-			<ul>
-				<li><a href="/home">Home</a></li>
-				<li><a href="/blog">Blog </a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/contact">Contact</a></li>
-			</nav>
-			</ul>
-		</div>
-	</div>
+	{% include 'banner.html' %}
 <div id="nav" class='row'>
-	<div class='col-sm-4'>
+	<div class='col-sm-2'>
 	</div>
-	<div class='col-sm-4'>
+	<div class='col-sm-8'>
 	<div id="contact-form-app">
 
-		<h1><span>Sign up for JobSwipe and take the next step to finding your perfect job</span></h1>
+		<h1><span>Sign up for GradBOX and take the next step to finding your perfect career</span></h1>
 		<form method="get" action="/applicant/signup/complete">
 			<label for="name">Name: </label>
 			<input type="text" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus" />
@@ -74,7 +63,7 @@
 		</form>
 	</div>
 	</div>
-	<div class='col-sm-4'>
+	<div class='col-sm-2'>
 	</div>
 </div>
 </body>

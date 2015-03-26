@@ -1,16 +1,17 @@
 <! DOCTYPE html>
 <head>
-	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
+	{% include 'style.html' %}
 	
 </head>
 <body>
+	{% include 'banner.html' %}
 <div id="nav" class='row'>
-	<div class='col-sm-4'>
-	</div>
-	<div class='col-sm-4'>
-	<div id="contact-form">
+		<div class="col-md-3">
+   		</div>
+   		<div class="col-md-6">
+		<div id="contact-form">
 		
-		<h2><span>Companies Sign Up</span></h2>
+		<h2><span>Sign up for GradBOX and take the next step to finding your next employees</span></h2>
 		<form method="post" action="/company/signup/complete">
 			<label for="name">Name: </label>
 			<input type="text" id="name" name="name" value="" placeholder="Company Name" required="" autofocus="autofocus" />
@@ -56,7 +57,8 @@
 		</form>
 	</div>
 	</div>
-	<div class='col-sm-4'>
+	<div class="col-md-3">
+   		</div>
 	</div>
 </div>
 </body>	

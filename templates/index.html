@@ -1,52 +1,44 @@
 <! DOCTYPE html>
 <head>
-	<link href="{{ url_for('static', filename='css/main.css') }}" rel='stylesheet'>
-	
+	{% include 'style.html' %}
 </head>
 <body>
-	<div id="nav" class='row'>
-		<div class='col-sm-4'>
-			<nav>
-			<ul>
-				<li><a href="/home">Home</a></li>
-				<li><a href="/blog">Blog </a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/contact">Contact</a></li>
-			</nav>
-			</ul>
-		</div>
-	</div>
-	<div class='col-sm-8'>
-	<div class="maintitle">
-	</div>
-	</div>
-	</div>
+
+	{% include 'banner.html' %}
+	
 	<div id="homepage">
-		<h1> START-UP SEARCH </h1>
-		<div id="nav" class='row'>
-			<div class='col-sm-4'>
-				<nav>
-					<ul>
-						<li><a>Companies <span class="caret"></span></a>
-						<div>
-							<ul>
-								<li><a href="/companies/signup">Sign Up</a></li>
-								<li><a href="/companies/signin">Sign In</a></li>
-							</ul>
-						</div>
-						</li>
-						<li><a>Applicants<span class="caret"></span></a>
-						<div>			
-							<ul>
-								<li><a href="/applicant/signup">Sign Up</a></li>
-								<li><a href="">Sign In</a></li>
-							</ul>
-						</div>
-						</li>
-					</ul>
-				</nav>	
-			</div>	
+		<div class='homepage-pic'>		
+				<img src='static/css/img/city-homepage.jpg' height = 250px width=100%>
 		</div>	
-	</div>	
+		<hr width=80% align="center" size="2px" color="#3399FF">
+		<p> Welcome to GradBOX, we hope inspire you to think outside the box for your graduate career. </p>
+		<p> Whether you know what you want, and just need to find your perfect comapny, or if you need some help coming up with ideas, we have the perfect career search for you. </p>
+		<p> No boring CVs and cover letters.</p>
+		<p> No complicated job specs. </p>
+		<p> If you find a role or a company you like, you apply. </p>
+		<hr width=80% align="center" size="2px" color="#3399FF">
+		<div class="container">
+   			<div class="row">
+   				<div class="col-md-1">
+   				</div>
+     			<div class="col-md-5"> 
+     				<h3>Graduates</h3>
+     				<p> Quick and simple sign up. </p>
+     				<p> Use your Linkedin profile, or fill in a short form. </p>
+     				<p> Then decide on careers with a quick swipe. </p>
+
+     			</div>
+   				<div class="col-md-5">
+   					<h3>Companies</h3>
+   					<p> Simply register with us by filling in a simple form. </p>
+   					<p> Then choose whether you want to wait for graduates to find you.</p>
+   					<p> Or if you want to find them! </p>
+   				</div>
+   				<div class="col-md-1">
+   				</div>
+   			</div>
+  		</div>
+  		<hr width=80% align="center" size="2px" color="#3399FF">
+  </div>			
 </body>
 </html>
