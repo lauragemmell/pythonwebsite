@@ -19,10 +19,16 @@
           center: new google.maps.LatLng(51.505151, -0.019459),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var myLatLng = new google.maps.LatLng(51.505151, -0.019459)
+        var marker = new google.maps.Marker({
+        	position: myLatLng,
+        	map: map,
+        	title: 'GradBOX, One Canada Square'
+        });
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head> 
 
