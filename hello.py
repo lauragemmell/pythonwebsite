@@ -17,6 +17,10 @@ def about():
 def contact():
 	return render_template('contact.html')
 
+@app.route("/blog")
+def blog():
+	return render_template('blog.html')
+
 @app.route("/companies/signup")
 def company_sign_up_page():
 	return render_template('companysignup.html')
@@ -51,26 +55,29 @@ def applicant_signup():
 @app.route("/applicant/signup/complete", methods=['POST'])
 def sign_up():
 	form_data = request.form
-
+	mandrill_client = mandrill.Mandrill('7FXR83a8RJiIs-1R8Aq7oQ')
 	email= form_data['email']
 	name= form_data['name']
 
 	mandrill_client.messages.send(
 	message={
-		'subject': 'Thanks for signing up',
+		'subject': 'Thanks for signing up to GradBOX',
 		'from_email': 'chayseldenashby@gmail.com',
 		'to': [
 			{
 				'email': email
 			}
 		],
-		'html': '<p> Welcome to JobSwipe, {0}. You are now ready to take the next step to your dream job </p>'.format(name)
+		'html': '<p> Welcome to GradBOX, {0}. You are now ready to take the next step to your dream job </p>'.format(name)
 	},
 	async=False
 	)
 
-	return "Thanks for signing up. Please check your inbox for your confirmation email"
+	return render_template('applicant_signedup.html')
 
+@app.route("/applicant/signin")
+def applicant_signin():
+	return render_template('applicant_signin.html')
 
 @app.route("/applicant/interface")
 def applicant_interface():
