@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<head>
+	{% include 'style.html' %}
+	
+</head>
+<body>
+	{% include 'banner.html' %}
+	<div class='row'>
+		<div class='col-sm-4'>
+		</div>
+		<div class='col-sm-4'>
+		<div id="sign-in">
+			<h3>Graduate Sign In</h3>
+			<form method="get" action="/applicant/interface">
+		        <p><label for="username">Email Address: </label>
+		        	<input type="email" name="login" value="" placeholder="Email" required=""></p>
+		        <p><label for="password">Password: </label>
+		        	<input type="password" name="password" value="" placeholder="Password" required=""></p>
+		        <p class="remember_me">
+		          <label>
+		            <input type="checkbox" name="remember_me" id="remember_me">
+		            Remember me on this computer
+		          </label>
+		        </p>
+		        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+		      </form>
+		</div>
+		</div>
+		<div class='col-sm-4'>
+		</div>
+	</div>
+</body>
+</html>
