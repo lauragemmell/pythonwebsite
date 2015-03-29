@@ -233,3 +233,13 @@ i {
 	padding-right: 5px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 }
+.homepage-pic{
+	padding-top: 90px;
+	min-height: 600px;
+	width:100vm;
+	margin-bottom: 0;
+	background-image: url('img/gradbox_banner.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
