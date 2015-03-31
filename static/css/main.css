@@ -181,6 +181,34 @@ nav > ul > li:hover > div {
 	padding-right: 5px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);}
 
+#jobinator{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+	text-align: center;
+	position:absolute;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	padding: 25px;
+	background-color: red;
+	color: #fff;
+	height: 55vw;
+	width: 55vw;
+	font-size: 3em;
+	max-width: 600px;
+	max-height: 600px;
+
+}
+
+.jobinator-text{
+	margin-top: inherit;
+	margin-bottom: auto;
+}
+
+.jobinator-share{
+	position: relative;
+}
+
 input[type="button"] {
 	background-color: rgb(51,153,255);
 	color: #fff;
@@ -222,6 +250,10 @@ input[type="checkbox"]{
 
 input[type="text"]{
 	width:60%;
+}
+
+label{
+	width:20%;
 }
 
 input[type="file"]{

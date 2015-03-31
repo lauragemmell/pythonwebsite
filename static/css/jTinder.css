@@ -99,6 +99,12 @@ html, body {
     transform: rotate(2deg);
 }
 
+#tinderslide li.panelast {
+    background-color: #fff;
+    margin:auto;
+    text-align: center;
+}
+
 /* Like & dislike badge images */
 #tinderslide .like,
 #tinderslide .dislike {
