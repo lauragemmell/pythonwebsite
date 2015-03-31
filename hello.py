@@ -9,9 +9,17 @@ app = Flask(__name__)
 def home():
 	return render_template('index.html')
 
-@app.route("/about")
-def about():
-	return render_template('about.html')
+@app.route("/about/why")
+def about_why():
+	return render_template('about_why.html')
+
+@app.route("/about/how")
+def about_how():
+	return render_template('about_what.html')
+
+@app.route("/about/team")
+def about_team():
+	return render_template('about_the_team.html')
 
 @app.route("/contact")
 def contact():
@@ -20,6 +28,10 @@ def contact():
 @app.route("/blog")
 def blog():
 	return render_template('blog.html')
+
+@app.route("/companies")
+def companymain():
+	return render_template('companysignup.html')
 
 @app.route("/companies/signup")
 def company_sign_up_page():
@@ -47,6 +59,11 @@ def company_sign_up():
     }
 )
 	return render_template('companiessignedup.html')
+
+@app.route("/applicant")
+def applicantmain():
+	return render_template('applicant_signup.html')
+	
 
 @app.route("/applicant/signup")
 def applicant_signup():

@@ -6,6 +6,15 @@ body{
 	font-size: 15px;
 
 }
+#banner{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	float: left;
+	z-index: 1;
+}
 .banner-words{
 	color: rgb(51,153,255);
 	font-weight: 300;
@@ -16,11 +25,21 @@ body{
 	color: rgb(255,255,255);
 	background-color: rgb(51,153,255);
 }
+
+h1{
+	color: rgb(51,153,255);
+}
+
+h2{
+	color: rgb(51,153,255);
+}
+
 #homepage{
 	margin-left: auto;
     margin-right: auto;
     text-align: center;
-	position: relative;
+    padding-top: 56px;
+    background-color: #fff;
 }
 .homepage-pic{
 	padding-left: 5px;
@@ -31,6 +50,28 @@ body{
 	margin: 0px 0px 0px 0px; 
 }
 
+.navbar {
+	min-height: 58px;
+	margin-bottom: 0px;
+}
+
+.navbar-header {
+	min-height: 58px;
+}
+
+.navbar-brand {
+	padding-top: 0px;
+}
+
+.navbar-toggle {
+	background-color: rgb(51,153,255);
+}
+
+.container-fluid {height:58px;}
+
+.navbar-toggle .icon-bar {
+	color: black;
+}
 
 nav ul {
 	margin: 0;
@@ -86,11 +127,11 @@ nav > ul > li > div {
 	border-top: 0;
 	border-radius: 0 0 4px 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-	display: none;
+	display: block;
 	margin: 0;
 	opacity: 0;
 	position: absolute;
-	width: 9.5%;
+	width: auto;
 	visibility: hidden;
 	z-index: 100;
 	
@@ -124,7 +165,7 @@ nav > ul > li:hover > div {
     margin-right: auto;
 	text-align: center;
 	position:absolute;
-	background-color: rgb(250,250,250);
+	background-color: #fff;
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 5px;
@@ -134,19 +175,34 @@ nav > ul > li:hover > div {
     margin-right: auto;
 	text-align: center;
 	position:absolute;
-	background-color: rgb(250,250,250);
+	background-color: #fff;
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 5px;
-	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);}
+
+input[type="button"] {
+	background-color: rgb(51,153,255);
+	color: #fff;
+	border:none;
+	border-radius: 5px;
 }
+
+input[type="submit"] {
+	background-color: rgb(51,153,255);
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+}
+
 #sign-in{
-	margin-left: 37%;
+	margin-left: auto;
     margin-right: auto;
 	text-align: center;
 	position:absolute;
 	top:10%;
-	background-color: rgb(250,250,250);
+	width:100%;
+	background-color: #fff;
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 10px;
@@ -158,6 +214,24 @@ input {
     display:inline-block;
     vertical-align:left;
     margin-left:20px
+}
+
+input[type="checkbox"]{
+	background-color: rgb(51,153,255);
+}
+
+input[type="text"]{
+	width:60%;
+}
+
+input[type="file"]{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type="email"]{
+	width:60%;
 }
 
 label {
@@ -191,7 +265,7 @@ label {
 	text-align: center;
 	position:absolute;
 	top:10%;
-	background-color: rgb(250,250,250);
+	background-color: #fff;
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 5px;
@@ -225,8 +299,8 @@ i {
 #about{
     margin-right: auto;
 	text-align: center;
-	position:absolute;
-	background-color: rgb(250,250,250);
+	position: absolute;
+	background-color: #fff;
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 5px;
@@ -234,11 +308,30 @@ i {
 }
 .homepage-pic{
 	padding-top: 90px;
-	min-height: 600px;
-	width:100vm;
+	min-height: 75%;
+	width: 100vm;
 	margin-bottom: 0;
 	background-image: url('img/gradbox_banner.jpg');
 	background-size: cover;
 	background-attachment: inherit;
 	background-position: center;
+}
+.content {
+	padding-top: 80px;
+}
+
+#menugrad {
+	width: 126px;
+}
+
+#menucompany{
+	width: 134px;
+}
+
+#buzzwords{
+	text-align: center;
+}
+
+#headline {
+	height:100px;
 }
