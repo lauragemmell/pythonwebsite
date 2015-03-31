@@ -5,60 +5,62 @@
 </head>
 <body>
 	{% include 'banner.html' %}
-<div id="nav" class='row'>
+<div class='content'>
+	<div id="nav" class='row'>
+			<div class="col-md-3">
+	   		</div>
+	   		<div class="col-md-6">
+			<div id="contact-form">
+			
+			<h2><span>Sign up for GradBOX and take the next step to finding your next employees</span></h2>
+			<form method="post" action="/company/signup/complete">
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" value="" placeholder="Company Name" required="" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" value="" placeholder="email@company.com" required="" autofocus="autofocus" />
+				<br>
+				<br>	
+				<label for="Size">Size: </label>
+				<input type="text" id="size" name="size" value="" placeholder="Company Size" required="" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="Location">Location: </label>
+				<input type="text" id="location" name="location" value="" placeholder="Company Location" required="" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="Picture/Logo">Company Logo/Picture: </label>
+				<input type="text" name="textline" placeholder="Optional Picture Text">
+				<br>
+				<label for="Picture/Logo">   </label>
+				<input type="file" name="datafile">
+				<br>
+				<br>
+		<!-- How to add add tick boxes for Buzz Words-->
+				<label for="Buzz Words">Buzz Words: </label>
+				<input type="text" id="words" name="words" value="" placeholder="Please Select" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="Blurb">Short Blurb: </label>
+				<input type="text" id="blurb" name="blurb" value="" placeholder="Some up your company or share something interesting" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="Website">Website: </label>
+				<input type="text" id="website" name="website" value="" placeholder="www.companywebsite.com" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="Linkedin">Linkedin: </label>
+				<input type="text" id="linkedin" name="linkedin" value="" placeholder="Linkedin Address" autofocus="autofocus" />
+				<br>
+				<br>
+				<input type="submit" value="Submit" id="submit-button" />
+			</form>
+		</div>
+		</div>
 		<div class="col-md-3">
-   		</div>
-   		<div class="col-md-6">
-		<div id="contact-form">
-		
-		<h2><span>Sign up for GradBOX and take the next step to finding your next employees</span></h2>
-		<form method="post" action="/company/signup/complete">
-			<label for="name">Name: </label>
-			<input type="text" id="name" name="name" value="" placeholder="Company Name" required="" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="email">Email: </label>
-			<input type="email" id="email" name="email" value="" placeholder="email@company.com" required="" autofocus="autofocus" />
-			<br>
-			<br>	
-			<label for="Size">Size: </label>
-			<input type="text" id="size" name="size" value="" placeholder="Company Size" required="" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="Location">Location: </label>
-			<input type="text" id="location" name="location" value="" placeholder="Company Location" required="" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="Picture/Logo">Company Logo/Picture: </label>
-			<input type="text" name="textline" placeholder="Optional Picture Text">
-			<br>
-			<label for="Picture/Logo">   </label>
-			<input type="file" name="datafile">
-			<br>
-			<br>
-	<!-- How to add add tick boxes for Buzz Words-->
-			<label for="Buzz Words">Buzz Words: </label>
-			<input type="text" id="words" name="words" value="" placeholder="Please Select" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="Blurb">Short Blurb: </label>
-			<input type="text" id="blurb" name="blurb" value="" placeholder="Some up your company or share something interesting" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="Website">Website: </label>
-			<input type="text" id="website" name="website" value="" placeholder="www.companywebsite.com" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="Linkedin">Linkedin: </label>
-			<input type="text" id="linkedin" name="linkedin" value="" placeholder="Linkedin Address" autofocus="autofocus" />
-			<br>
-			<br>-->
-			<input type="submit" value="Submit" id="submit-button" />
-		</form>
-	</div>
-	</div>
-	<div class="col-md-3">
-   		</div>
+	   		</div>
+		</div>
 	</div>
 </div>
 </body>	

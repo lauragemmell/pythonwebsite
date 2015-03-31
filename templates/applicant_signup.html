@@ -8,62 +8,68 @@
 
 <body>
 	{% include 'banner.html' %}
-<div id="nav" class='row'>
-	<div class='col-sm-2'>
-	</div>
-	<div class='col-sm-8'>
-	<div id="contact-form-app">
+	<div class='content'>
+	<div id="nav" class='row'>
+		<div class='col-sm-2'>
+		</div>
+		<div class='col-sm-8'>
+		<div id="contact-form-app">
 
-		<h1><span>Sign up for GradBOX and take the next step to finding your perfect career</span></h1>
-		<form method="post" action="/applicant/signup/complete">
-			<label for="name">Name: </label>
-			<input type="text" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus" />
-			<br>
-			<br>
-			<label for="email">Email Address: </label>
-			<input type="email" id="email" name="email" value="" placeholder="email" required="required" />
-			<br>
-			<br>
-			<label for="skill">What are your key skills? </label> 
-			<input type="text" id="skill" name="skill" placeholder="e.g. Coding" required="required">
-			<br>
-			<br>
-			<label for="qualification">Qualification: </label> 
-			<input type="text" id="qualification" name="qualification" placeholder="" required="required">
-			<br>
-			<br>
-			<label for="experience_level">Experience level: </label> 
-			<input type="text" id="experience_level" name="experience_level" placeholder="Number of years experience" required="required">
-			<br>
-			<br>
-			<label for="job_area">Area of experience: </label> 
-			<input type="text" id="job_area" name="job_area" placeholder="Industries you have worked in" required="required">
-			<br>
-			<br>
-			<label for="job_seniority">What was your most recent job title? </label> 
-			<input type="text" id="job_seniority" name="job_seniority" placeholder="Job Title" required="">
-			<br>
-			<br>
-			<label for="job_tenure">How long were you there? </label> 
-			<input type="text" id="job_tenure" name="job_tenure" placeholder="6 months" required="required">
-			<br>
-			<br>
-			<label for="buzzwords">What kind of things would you like to do in your job? </label> <br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Data_analysis">Data Analysis <br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Presenting">Presenting<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Negotiation">Negotiation<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Design">Designing things<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Research">Research<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Strategy">Looking at information to draw conclusions on a course of action<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Coding">Writing code<br>
-			<input type="checkbox" id="buzzwords" name="buzzwords" value="Making">Working on something with a tangible output<br>
-			<br>
-			<br>
-			<input type="submit" value="Submit" id="submit-button" />
-		</form>
-	</div>
-	</div>
-	<div class='col-sm-2'>
+			<h1><span>Sign up for GradBOX and take the next step to finding your perfect career</span></h1>
+			<form method="post" action="/applicant/signup/complete">
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" value="" placeholder="Name" required="required" autofocus="autofocus" />
+				<br>
+				<br>
+				<label for="email">Email Address: </label>
+				<input type="email" id="email" name="email" value="" placeholder="Email" required="required" />
+				<br>
+				<br>
+				<label for="headline">What should potential employers know about you? </label>
+				<input type="text" id="headline" name="headline" value="" placeholder="Make it snappy! What makes you a fantastic person to work with? What unique things can you bring to a team?" required="" />
+				<br>
+				<br>
+				<label for="skill">What are your key skills? </label> 
+				<input type="text" id="skill" name="skill" placeholder="e.g. Coding" required="">
+				<br>
+				<br>
+				<label for="qualification">Qualification: </label> 
+				<input type="text" id="qualification" name="qualification" placeholder="" required="">
+				<br>
+				<br>
+				<label for="experience_level">Experience level: </label> 
+				<input type="text" id="experience_level" name="experience_level" placeholder="Number of years experience" required="">
+				<br>
+				<br>
+				<label for="job_area">Area of experience: </label> 
+				<input type="text" id="job_area" name="job_area" placeholder="Industries you have worked in" required="">
+				<br>
+				<br>
+				<label for="job_seniority">What was your most recent job title? </label> 
+				<input type="text" id="job_seniority" name="job_seniority" placeholder="Job Title" required="">
+				<br>
+				<br>
+				<label for="job_tenure">How long were you there? </label> 
+				<input type="text" id="job_tenure" name="job_tenure" placeholder="6 months" required="">
+				<br>
+				<br>
+				<label for="buzzwords">What kind of things would you like to do in your job? </label> <br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Data_analysis">Data Analysis <br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Presenting">Presenting<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Negotiation">Negotiation<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Design">Designing things<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Research">Research<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Strategy">Looking at information to draw conclusions on a course of action<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Coding">Writing code<br>
+				<input type="checkbox" id="buzzwords" name="buzzwords" value="Making">Working on something with a tangible output<br>
+				<br>
+				<br>
+				<input type="submit" value="Submit" id="submit-button" />
+			</form>
+		</div>
+		</div>
+		<div class='col-sm-2'>
+		</div>
 	</div>
 </div>
 </body>
