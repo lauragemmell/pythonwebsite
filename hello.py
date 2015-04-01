@@ -1,7 +1,11 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import redirect
 import mandrill
+import random
+import string
+from random import randint
 
 app = Flask(__name__)
 
@@ -48,16 +52,19 @@ def company_sign_in_success():
 @app.route("/company/signup/complete",methods=['POST'])
 def company_sign_up():
 	form_data = request.form
-	mandrill_client = mandrill.Mandrill('9FdJjzfupPJojkDcNiv4jA')
- 	mandrill_client.messages.send(
-    message={
-        'html': '<p>Hello from Mandrill!</p>',
-        'from_email': 'laura-gemmell@hotmail.com',
-        'from_name': 'START-UP SEARCH',
-        'to': [{'email': form_data['email'], 'name': form_data['name'], 'type': 'to'}],
-        "subject": 'Confirmation of START-UP SEARCH sign up'
-    }
-)
+	mandrill_client = mandrill.Mandrill('ZJ6h81vltJ7rGe7axB02cg')
+ 	template_content = [{'content': form_data['name'], 'name': 'name'}, {'content': (form_data['name']).replace(" ", "").lower() + str(randint(100,999)), 'name': 'username'}, {'content': ''.join(random.choice(string.ascii_letters + string.digits) for i in range (12)), 'name': 'password'}] 
+	response = mandrill_client.messages.send_template(
+		template_name = 'companyemail',
+		template_content = template_content,
+		message = {
+		'subject': 'Welcome to GradBOX',
+		'from_email': 'welcome@gradbox.com',
+		'to': [{'email': form_data['email'], 'name': form_data['name'], 'type': 'to'}],
+	
+		},
+		async = False
+	)
 	return render_template('companiessignedup.html')
 
 @app.route("/applicant")
@@ -70,24 +77,20 @@ def applicant_signup():
 	return render_template('applicant_signup.html')
 
 @app.route("/applicant/signup/complete", methods=['POST'])
-def sign_up():
+def applicant_sign_up():
 	form_data = request.form
-	mandrill_client = mandrill.Mandrill('7FXR83a8RJiIs-1R8Aq7oQ')
-	email= form_data['email']
-	name= form_data['name']
-
-	mandrill_client.messages.send(
-	message={
-		'subject': 'Thanks for signing up to GradBOX',
-		'from_email': 'chayseldenashby@gmail.com',
-		'to': [
-			{
-				'email': email
-			}
-		],
-		'html': '<p> Welcome to GradBOX, {0}. You are now ready to take the next step to your dream job </p>'.format(name)
-	},
-	async=False
+	mandrill_client = mandrill.Mandrill('ZJ6h81vltJ7rGe7axB02cg')
+ 	template_content = [{'content': form_data['name'], 'name': 'name'}, {'content': (form_data['name']).replace(" ", "").lower() + str(randint(100,999)), 'name': 'username'}, {'content': ''.join(random.choice(string.ascii_letters + string.digits) for i in range (12)), 'name': 'password'}] 
+	response = mandrill_client.messages.send_template(
+		template_name = 'useremail',
+		template_content = template_content,
+		message = {
+		'subject': 'Welcome to GradBOX',
+		'from_email': 'welcome@gradbox.com',
+		'to': [{'email': form_data['email'], 'name': form_data['name'], 'type': 'to'}],
+	
+		},
+		async = False
 	)
 
 	return render_template('applicant_signedup.html')
@@ -155,8 +158,8 @@ def job_gen_result():
 			Office = "with a great office culture"
 	elif Vibe == "pressure":
 		Office = "where there is always plenty of work to keep busy with"
-
-	return render_template('job_gen_result.html', Company=Company, role=role, Office=Office, Animal=Animal, Colour=Colour)
+	
+	return render_template('job_gen_result.html', Company=Company, role=role, Office=Office, Animal=Animal)
 		
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", port=5000,debug=True)
