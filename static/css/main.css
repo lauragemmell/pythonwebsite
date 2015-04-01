@@ -183,6 +183,7 @@ nav > ul > li:hover > div {
 	border-radius: 10px;
 	padding-right: 5px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin-top: 15px;
 }
 #contact-form-app{
     margin-right: auto;
@@ -192,7 +193,9 @@ nav > ul > li:hover > div {
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	padding-right: 5px;
-	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);}
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin-top: 15px;
+}
 
 #jobinator{
     margin-right: auto;
@@ -220,6 +223,8 @@ nav > ul > li:hover > div {
 
 .jobinator-share{
 	position: relative;
+	padding-left: 50%;
+	text-align: center;
 }
 
 input[type="button"] {
@@ -294,6 +299,7 @@ label {
 	border: 1px solid rgb(160,160,160);
 	border-radius: 10px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin-top: 15px;
 }
 #signed-up{
 	padding-left: 5px;
@@ -466,16 +472,55 @@ i {
 
 #aim{
 	background-color: #0383ff;
-	padding: 5%;
+	padding: 3%;
 	border-right: #fff 5px;
 	margin-top: 20px;
-	height:40vh;
+	height:50vh;
+	color: #fff;
 }
 
 #finding-a-career{
 	background-color: #39008c;
-	padding: 5%
-	margin-top:20px;
-	height:40vh;
+	padding: 3%;
+	margin-top: 20px;
+	height:50vh;
+	color: #fff;
 }
 
+#Jobs-quote{
+	border: 10px rgb(51,153,255);
+}
+
+#laura{
+	background-image: url('img/laura-gemmell.jpg');
+	height:30vh;
+	width:30vh;
+	border-radius:300px;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#gemma{
+	background-image: url('img/gemma.jpg');
+	height:30vh;
+	width:30vh;
+	border-radius:300px;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#camilla{
+	background-image: url('img/camilla.jpg');
+	height:30vh;
+	width:30vh;
+	border-radius:300px;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tumblr-container{
+	margin-top: 15px;
+}
