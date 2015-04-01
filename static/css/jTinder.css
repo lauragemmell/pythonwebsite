@@ -19,11 +19,10 @@ html, body {
 #tinderslide {
     
     position: relative;
-    background: #fff;
     width: 80vw;
     height: 80vw;
     max-height: 640px;
-    margin-left: auto;
+    margin-left: 20%;
     margin-right: auto;
 }
 
@@ -101,8 +100,11 @@ html, body {
 
 #tinderslide li.panelast {
     background-color: #fff;
-    margin:auto;
     text-align: center;
+}
+
+#tinderslide li.panelast h1 {
+    margin-top: 35%;
 }
 
 /* Like & dislike badge images */
