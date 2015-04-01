@@ -155,8 +155,8 @@ def job_gen_result():
 			Office = "with a great office culture"
 	elif Vibe == "pressure":
 		Office = "where there is always plenty of work to keep busy with"
-	
-	return render_template('job_gen_result.html', Company=Company, role=role, Office=Office, Animal=Animal)
+
+	return render_template('job_gen_result.html', Company=Company, role=role, Office=Office, Animal=Animal, Colour=Colour)
 		
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", port=5000,debug=True)
