@@ -10,54 +10,59 @@
 <body>
     {% include 'banner.html' %}
     <!-- start padding container -->
-    <div class="wrap">
-        <!-- start jtinder container -->
-        <div id="tinderslide">
-            <ul>
-                <li class="pane1">
-                    <div class="img"></div>
-                  
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane2">
-                    <div class="img"></div>
-                   
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane3">
-                    <div class="img"></div>
-                    
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane4">
-                    <div class="img"></div>
-                    
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-                <li class="pane5">
-                    <div class="img"></div>
-                   
-                    <div class="like"></div>
-                    <div class="dislike"></div>
-                </li>
-            </ul>
+    <div class='content'>
+        <div class="wrap">
+            <!-- start jtinder container -->
+            <div id="tinderslide">
+                <ul>
+                    <li class='panelast'>Sorry, we don't have any more jobs to suit your criteria right now. In the meantime, get some more inspiration with the <a href='/applicant/jobinator'>Jobinator</a></li>
+                    <li class="pane1">
+                        <div class="img"></div>
+                      
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane2">
+                        <div class="img"></div>
+                       
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="img"></div>
+                        
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane4">
+                        <div class="img"></div>
+                        
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane5">
+                        <div class="img"></div>
+                       
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- end jtinder container -->
         </div>
-        <!-- end jtinder container -->
-    </div>
-    <!-- end padding container -->
+        <!-- end padding container -->
 
-    <!-- jTinder trigger by buttons  -->
-    <div class="actions">
-        <a href="#" class="dislike"><i></i></a>
-        <a href="#" class="like"><i></i></a>
-    </div>
+        <!-- jTinder trigger by buttons  -->
+        <div class="actions">
+            <a href="#" class="dislike"><i></i></a>
+            <a href="#" class="like"><i></i></a>
+        </div>
 
-    <!-- jTinder status text  -->
-    <div id="status"></div>
+        <!-- jTinder status text  -->
+        <div id="status"></div>
+    </div>
 
     <!-- jQuery lib -->
     <script type="text/javascript" src="{{url_for('static', filename="js/jquery.min.js") }}"> </script>

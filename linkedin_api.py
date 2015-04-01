@@ -1,33 +1,32 @@
-from linkedin import linkedin
+from SocketServer import ThreadingTCPServer
+from SimpleHTTPServer import SimpleHTTPRequestHandler
+from webbrowser import open_new_tab
+from json import dumps
+from urlparse import urlparse
+from os import environ
+from types import NoneType
 
-#from flask import Flask
-#from flask import render_template
-#from flask import request
+from linkedin.linkedin import LinkedInAuthentication, LinkedInApplication, PERMISSIONS
 
-#app = Flask(__name__)
+from flask import Flask
+from flask import render_template
+from flask import request
+
+app = Flask(__name__)
+
+API_KEY = '77oeww4ifjp1x9'
+API_SECRET = 'HNNb1j54d3mbOcsz'
+RETURN_URL = 'http://localhost:5000/linkedin'
+authentication = LinkedInAuthentication(API_KEY, API_SECRET, RETURN_URL, PERMISSIONS.enums.values())
+application = LinkedInApplication(authentication)
+
+application = LinkedInApplication(token="AQVvfw_sneGeFn3LMqlsPy8N1LirvyyW33BgpyurHZmw9usW0jAIA_fG-6p4qFag4XiRNp2dieKWCOZHBC0RJIDEFaYbV_qK5k3xSm-T5t5cx9xI6xN4PD5p3hhetjpsvtt0OQSn0QlgmJNXapJHyFUvbKYuBKhQtaHcJW72z1_gn21h8cA")
 
 
-API_KEY = '77ixeb51nc5pb5'
-API_SECRET = 'lOkeJpombJS8wSyT'
-RETURN_URL = 'http://127.0.0.1:5000/signup'
+application.get_profile()
 
-authentication = linkedin.LinkedInAuthentication(API_KEY, API_SECRET, RETURN_URL, linkedin.PERMISSIONS.enums.values())
-# Optionally one can send custom "state" value that will be returned from OAuth server
-# It can be used to track your user state or something else (it's up to you)
-# Be aware that this value is sent to OAuth server AS IS - make sure to encode or hash it
-#authorization.state = 'your_encoded_message'
-print authentication.authorization_url  # open this url on your browser
-application = linkedin.LinkedInApplication(authentication)
-
-#application.get_profile()
-
-authentication.authorization_code = 'AQTGaJoHf9flbbgGxgKDKyZDbC1u44qqLBWmPwrliEx0OPqbE7zoO9ZMwxa0y49bEeV-nu5kuf28Gm-L6vVSoSHSlGVQ_1hkiK3UH-LZCg8wjg0NeHM'
-authentication.get_access_token()
-
-#@app.route("/signup")
-
-#if __name__ == "__main__":
-#	app.run(host="0.0.0.0", port=5000, debug=True)
+if __name__ == "__main__":
+	app.run(host="0.0.0.0", port=5000, debug=True)
 
 
 #127.0.0.1
